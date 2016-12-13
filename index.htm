@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Cordova Enabled Plug-ins</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="cordova.js"></script>
-	<script src="js/test.js"></script>
-	<title>Cordova Enabled Plug-ins</title>
+	<script src="js/device.js"></script>
 </head>
 <body>
-
-<!--
-<div id='frame' class='Center' align='center'>
--->
-<div id='frame'>
-	<div id='header'>
-		<div id='name'>Index</div>
-		<div id='collection'></div>
-	</div>
-	<div id='body'>
-<!--
-	<div id='log_info' class='wordwrap'>
-	</div>
--->
-	<div id='listContainer'>
-	</div>
-
-	</div> <!-- id='body' -->
-
-	<div id='footer'>
-
-    <div id='previous_button' class='btn-bot-left'>
- 		<a style="display:block;width:100%;height:100%;" href='navto://relative/previous'"><img id='previous_button_image'></a>
+<h1>AEM Mobile specific Cordova Enabled Plug-ins</h1>
+<section class="section1">
+    <h3 class="sectionTtile">
+        <a name="cm_device">CQM  Device Info Plugin</a>
+        <input class="playBtn" type="button" value="Go" onclick="javascript:loadCQDeviceInfo()"></span>
+    </h3>
+    <div class="section1content">
+        <p><span>Plugin ID : </span> cordova-cqmobile-device</p>
+        <p><span>Device Class : </span><div id="device_class"></div></p>
+        <p><span>Device VendorId:</span><div id="device_vendor_id"></div></p>
     </div>
-
-	<div id='author'></div>
-
-    <div id='next_button' class='btn-bot-right'>
-    	<a style="display:block;width:100%;height:100%;" href='navto://relative/next'"><img id='next_button_image'></a>
-    </div>
-
-	</div> <!-- footer -->
-</div> <!-- id='frame' -->
-
+</section>
+<!--
+<h3>Custom Cordova Device Plugin</h3>
+<span class="playBtn" onload="javascript:loadDeviceInfo()"></span>
+-->
 </body>
 </html>
